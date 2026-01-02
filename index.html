@@ -15,8 +15,21 @@
 
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; color: var(--text); background-color: #fff; line-height: 1.6; }
         
+        /* LOGO TOP BAR */
+        .top-bar {
+            background-color: white;
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #eee;
+        }
+        .logo {
+            height: 30px; /* Adjusts the size of the logo */
+            width: auto;
+        }
+
         /* HEADER & PROGRESS */
-        header { background: var(--primary); color: white; padding: 50px 20px; text-align: center; }
+        header { background: var(--primary); color: white; padding: 40px 20px; text-align: center; }
         .checkmark { font-size: 40px; background: white; color: #28a745; border-radius: 50%; width: 60px; height: 60px; display: inline-flex; align-items: center; justify-content: center; margin-bottom: 15px; }
         .progress-container { width: 80%; max-width: 300px; background: rgba(255,255,255,0.2); margin: 15px auto; border-radius: 10px; height: 8px; }
         .progress-fill { width: 100%; background: #28a745; height: 100%; border-radius: 10px; }
@@ -29,12 +42,11 @@
         .card h3 { margin-top: 0; color: var(--primary); font-size: 1.1em; }
         .card p { font-size: 0.9em; margin-bottom: 0; }
 
-        /* REFERRAL BOX (Dashed Style) */
+        /* REFERRAL BOX */
         .referral-box { background: var(--accent); border: 2px dashed var(--secondary); padding: 30px; border-radius: 15px; text-align: center; margin-bottom: 30px; }
         .referral-box h2 { color: var(--primary); margin-top: 0; font-size: 1.4em; }
-        .referral-box p { color: #444; font-size: 0.95em; line-height: 1.5; }
 
-        /* ACTION TABS / BUTTONS */
+        /* BUTTONS */
         .tab-group { display: flex; flex-direction: column; gap: 15px; align-items: center; }
         .btn { display: inline-block; padding: 16px 30px; text-decoration: none; border-radius: 8px; font-weight: bold; transition: 0.3s; text-align: center; width: 100%; max-width: 400px; border: none; cursor: pointer; }
         .btn-whatsapp { background: var(--whatsapp); color: white; font-size: 1.1em; }
@@ -46,6 +58,10 @@
     </style>
 </head>
 <body>
+
+<div class="top-bar">
+    <img src="https://www.randstad.com/s3fs-public/randstad_logo_standard.png" alt="Randstad Logo" class="logo">
+</div>
 
 <header>
     <div class="checkmark">✓</div>
@@ -63,7 +79,7 @@
         </div>
         <div class="card">
             <h3>2. Response Time</h3>
-            <p>You can expect a follow-up response regarding your status within <strong>14 working days</strong>.</p>
+            <p>You can expect a follow-up response regarding your status within 14 working days.</p>
         </div>
         <div class="card">
             <h3>3. Communication</h3>
@@ -76,7 +92,7 @@
         <p>Canada is facing sustained workforce demand across key industries. Our objective is to strategically align qualified talent with available opportunities through the Workforce Mobility & Employment Program.</p>
         <p>If you have colleagues or professional contacts who meet the program’s criteria, we kindly request that you share this form with them directly via WhatsApp to support effective talent placement.</p>
         
-        <a href="https://wa.me/?text=Hi!%20I%20just%20applied%20for%20the%20Workforce%20Mobility%20%26%20Employment%20Program.%20If%20you%20are%20looking%20for%20career%20opportunities%20in%20Canada,%20you%20should%20apply%20here:%20https://randstadnv.com" 
+        <a href="https://wa.me/?text=Hi!%20I%20just%20applied%20for%20the%20Workforce%20Mobility%20%26%20Employment%20Program.%20Check%20it%20out%20here:%20https://randstadnv.com" 
            class="btn btn-whatsapp" target="_blank">
             Click to Share with Contacts via WhatsApp
         </a>
@@ -95,3 +111,4 @@
 
 </body>
 </html>
+
