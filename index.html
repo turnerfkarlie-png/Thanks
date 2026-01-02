@@ -15,17 +15,8 @@
 
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; color: var(--text); background-color: #fff; line-height: 1.6; }
         
-        .top-bar {
-            background-color: white;
-            padding: 15px 20px;
-            display: flex;
-            align-items: center;
-            border-bottom: 1px solid #eee;
-        }
-        .logo {
-            height: 35px;
-            width: auto;
-        }
+        .top-bar { background: white; padding: 15px 20px; display: flex; align-items: center; border-bottom: 1px solid #eee; }
+        .logo { height: 35px; width: auto; }
 
         header { background: var(--primary); color: white; padding: 50px 20px; text-align: center; }
         .checkmark { font-size: 40px; background: white; color: #28a745; border-radius: 50%; width: 60px; height: 60px; display: inline-flex; align-items: center; justify-content: center; margin-bottom: 15px; }
@@ -33,22 +24,33 @@
         .progress-fill { width: 100%; background: #28a745; height: 100%; border-radius: 10px; }
 
         .container { max-width: 900px; margin: 0 auto; padding: 30px 20px; }
-
-        /* UPDATED GRID FOR 4 CARDS */
         .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-bottom: 40px; }
-        .card { background: #fff; padding: 20px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); border-top: 4px solid var(--secondary); display: flex; flex-direction: column; justify-content: space-between; }
+        .card { background: #fff; padding: 20px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); border-top: 4px solid var(--secondary); }
         .card h3 { margin-top: 0; color: var(--primary); font-size: 1.1em; }
-        .card p { font-size: 0.85em; margin-bottom: 10px; }
 
         .referral-box { background: var(--accent); border: 2px dashed var(--secondary); padding: 30px; border-radius: 15px; text-align: center; margin-bottom: 30px; }
-        .referral-box h2 { color: var(--primary); margin-top: 0; font-size: 1.4em; }
-
+        
         .btn { display: inline-block; padding: 16px 30px; text-decoration: none; border-radius: 8px; font-weight: bold; transition: 0.3s; text-align: center; width: 100%; max-width: 400px; border: none; cursor: pointer; }
         .btn-whatsapp { background: var(--whatsapp); color: white; font-size: 1.1em; }
-        .btn-home { background: var(--secondary); color: white; }
+        .btn-home { background: var(--secondary); color: white; margin-top: 20px; }
+
+        /* CORPORATE FOOTER */
+        .corporate-footer { background-color: #00214c; color: #ffffff; padding: 60px 20px; font-size: 14px; }
+        .footer-container { max-width: 900px; margin: 0 auto; }
+        .footer-dropdown { display: flex; justify-content: space-between; border-bottom: 1px solid rgba(255,255,255,0.2); padding-bottom: 15px; margin-bottom: 30px; font-size: 18px; font-weight: bold; }
+        .social-icons { margin-bottom: 30px; }
+        .social-icons span { display: inline-block; background: rgba(255,255,255,0.2); width: 35px; height: 35px; border-radius: 50%; text-align: center; line-height: 35px; margin-right: 15px; }
+        .company-info { color: rgba(255,255,255,0.6); line-height: 1.8; margin-bottom: 30px; }
+        .footer-links { display: flex; flex-direction: column; gap: 12px; }
+        .footer-links a { color: rgba(255,255,255,0.6); text-decoration: none; }
+
+        /* FEEDBACK TAB */
+        .feedback-tab { position: fixed; right: 0; top: 50%; transform: translateY(-50%) rotate(-90deg); transform-origin: right bottom; background-color: #4b89ff; color: white; padding: 10px 20px; font-size: 14px; font-weight: bold; text-decoration: none; border-radius: 8px 8px 0 0; z-index: 9999; }
     </style>
 </head>
 <body>
+
+<a href="https://www.randstad.com/contact-us/" class="feedback-tab">Feedback</a>
 
 <div class="top-bar">
     <img src="1000050145.jpg" alt="Randstad Logo" class="logo">
@@ -57,48 +59,46 @@
 <header>
     <div class="checkmark">✓</div>
     <h1>Application Received!</h1>
-    <p style="max-width: 600px; margin: 0 auto;">Thank you for submitting your details to the Workforce Mobility & Employment Program. Please check your email inbox. We've sent a detailed summary of your application for your records.</p>
+    <p>Thank you for submitting your details to the Workforce Mobility & Employment Program.</p>
     <div class="progress-container"><div class="progress-fill"></div></div>
     <small style="opacity: 0.8;">Submission 100% Complete</small>
 </header>
 
 <div class="container">
     <div class="grid">
-        <div class="card">
-            <h3>1. Consideration</h3>
-            <p>Your application is now being formally considered by our program specialists.</p>
-        </div>
-        <div class="card">
-            <h3>2. Response Time</h3>
-            <p>You can expect a follow-up response regarding your status within <strong>14 working days</strong>.</p>
-        </div>
-        <div class="card">
-            <h3>3. Communication</h3>
-            <p>If more details are required, we will contact you directly using your provided information.</p>
-        </div>
-        <div class="card">
-            <h3>4. Privacy Policy</h3>
-            <p>Your data is protected. Review our <a href="privacy.html" style="color: var(--secondary); font-weight: bold; text-decoration: none;">Full Privacy Policy</a> to see how we handle your information.</p>
-        </div>
+        <div class="card"><h3>1. Consideration</h3><p>Your application is now being formally considered by our specialists.</p></div>
+        <div class="card"><h3>2. Response Time</h3><p>Expect a follow-up response regarding your status within 14 working days.</p></div>
+        <div class="card"><h3>3. Communication</h3><p>If more details are required, we will contact you directly.</p></div>
+        <div class="card"><h3>4. Privacy Policy</h3><p>Your data is protected. Review our <a href="privacy.html" style="color:var(--secondary); font-weight:bold; text-decoration:none;">Privacy Policy</a>.</p></div>
     </div>
 
     <div class="referral-box">
         <h2>Collaboration Drives Success</h2>
-        <p>Canada is facing sustained workforce demand across key industries. Our objective is to strategically align qualified talent with available opportunities through the Workforce Mobility & Employment Program.</p>
-        <p>If you have colleagues or professional contacts who meet the program’s criteria, we kindly request that you share this form with them directly via WhatsApp to support effective talent placement.</p>
-        
-        <a href="https://wa.me/?text=Hi!%20I%20just%20applied%20for%20the%20Workforce%20Mobility%20%26%20Employment%20Program.%20Apply%20here:%20https://randstadnv.com" 
-           class="btn btn-whatsapp" target="_blank">
-            Click to Share with Contacts via WhatsApp
-        </a>
+        <p>Canada is facing sustained workforce demand across key industries. We kindly request that you share this form with qualified contacts via WhatsApp.</p>
+        <a href="https://wa.me/?text=Hi!%20I%20just%20applied%20for%20the%20Workforce%20Mobility%20%26%20Employment%20Program:%20https://randstadnv.com" class="btn btn-whatsapp" target="_blank">Share via WhatsApp</a>
     </div>
 
-    <div style="text-align:center;">
+    <div style="text-align:center; padding-bottom: 40px;">
         <a href="https://www.randstad.com/" class="btn btn-home">Return to Homepage</a>
-
     </div>
 </div>
 
+<footer class="corporate-footer">
+    <div class="footer-container">
+        <div class="footer-dropdown"><span>about this website</span><span>∨</span></div>
+        <div class="social-icons"><span>in</span><span>▶</span></div>
+        <div class="company-info">
+            <p>Randstad N.V. Registered in The Netherlands No: 33216172. Registered office: Diermermere 25, 1112 TC Diemen, The Netherlands.</p>
+            <p>© Randstad N.V. Some images generated using AI.</p>
+        </div>
+        <div class="footer-links">
+            <a href="https://www.randstad.com/contact-us/">contact us</a>
+            <a href="https://www.randstad.com/terms-conditions/">terms & conditions</a>
+            <a href="privacy.html">privacy notice</a>
+            <a href="https://www.randstad.com/cookies/">cookies</a>
+        </div>
+    </div>
+</footer>
+
 </body>
 </html>
-
