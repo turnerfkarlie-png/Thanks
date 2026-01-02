@@ -23,7 +23,7 @@
             border-bottom: 1px solid #eee;
         }
         .logo {
-            height: 35px; /* Adjust this to make your logo look right */
+            height: 35px;
             width: auto;
         }
 
@@ -34,9 +34,11 @@
 
         .container { max-width: 900px; margin: 0 auto; padding: 30px 20px; }
 
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-bottom: 40px; }
-        .card { background: #fff; padding: 20px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); border-top: 4px solid var(--secondary); }
+        /* UPDATED GRID FOR 4 CARDS */
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-bottom: 40px; }
+        .card { background: #fff; padding: 20px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); border-top: 4px solid var(--secondary); display: flex; flex-direction: column; justify-content: space-between; }
         .card h3 { margin-top: 0; color: var(--primary); font-size: 1.1em; }
+        .card p { font-size: 0.85em; margin-bottom: 10px; }
 
         .referral-box { background: var(--accent); border: 2px dashed var(--secondary); padding: 30px; border-radius: 15px; text-align: center; margin-bottom: 30px; }
         .referral-box h2 { color: var(--primary); margin-top: 0; font-size: 1.4em; }
@@ -74,6 +76,10 @@
             <h3>3. Communication</h3>
             <p>If more details are required, we will contact you directly using your provided information.</p>
         </div>
+        <div class="card">
+            <h3>4. Privacy Policy</h3>
+            <p>Your data is protected. Review our <a href="privacy.html" style="color: var(--secondary); font-weight: bold; text-decoration: none;">Full Privacy Policy</a> to see how we handle your information.</p>
+        </div>
     </div>
 
     <div class="referral-box">
@@ -90,12 +96,6 @@
     <div style="text-align:center;">
         <a href="https://randstadnv.com" class="btn btn-home">Return to Homepage</a>
     </div>
-</div>
-
-</body>
-</html>
-    <a href="privacy.html">Privacy Policy</a>
-    <a href="https://randstadnv.com">Contact Us</a>
 </div>
 
 </body>
